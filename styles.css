@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: blueviolet;
+    padding: 20px;
+    text-align: center;
+}
+footer{
+    background-color: blueviolet;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+span{
+    color: red;
+}
+main{
+    margin: 20px;
+    text-align: center;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+.gallery-photo{
+    overflow: hidden;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.gallery-photo img{
+    width: 100%;
+    height: auto;
+}
+.gallery-photo img:hover{
+    transform: scale(1.1)
+}
